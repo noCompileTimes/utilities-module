@@ -10,7 +10,7 @@ namespace core
     class File
     {
     public:
-        static auto read(std::string_view filename) -> std::string
+        static auto read(const std::string_view filename) -> std::string
         {
             const std::ifstream stream { filename.data() };
 
